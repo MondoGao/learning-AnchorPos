@@ -1,196 +1,345 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>AnchorPosition</title>
-    <style media="screen">
-      *{
-        margin: 0;
-        padding: 0;
-        border: 0;
-      }
-      body{
-        font-size: 12px;
-        line-height:1.7;
-      }
-      li  {
-        list-style: none;
-      }
-      .content{
-        width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      .content h1{
-        color: #0088bb;
-      }
-      .content .item{
-        padding: 20px;
-        margin-bottom: 20px;
-        border: 1px dotted #0088bb;
-        font-size: 0;
-      }
-      .content .item h2{
-        font-size: 16px;
-        font-weight: bold;
-        border-bottom: 2px solid #0088bb;
-        margin-bottom: 10px;
-      }
-      .content .item li{
-        display: inline-block;
-        margin: 10px;
-      }
-      .content .item li a{
-        display: inline-block;
-        font-size: 1rem;
-        width: 230px;
-        height: 230px;
-      }
-      .item1 li a{
-        background-color: blue;
-      }
-      .item2 li a{
-        background-color: green;
-      }
-      .item3 li a{
-        background-color: yellow;
-      }
-      .item4 li a{
-        background-color: red;
-      }
-      .item5 li a{
-        background-color: black;
-      }
-      .item6 li a{
-        background-color: white;
-      }
 
-      .menu{
-        position: fixed;
-        top: 100px;
-        left: 50%;
-        margin-left: 400px;
-        width: 80px;
-      }
-      .menu ul li a{
-        display: block;
-        margin: 5px 0;
-        font-size: 14px;
-        font-weight: bold;
-        color: #333;
-        width: 80px;
-        height: 50px;
-        line-height: 50px;
-        text-decoration: none;
-        text-align: center;
-      }
-      .menu ul li a:hover, .menu ul li a.active{
-        color: #fff;
-        background: #0088bb;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="menu">
+<head>
+  <meta charset="utf-8">
+  <title>AnchorPosition</title>
+  <style media="screen">
+    * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    body {
+      font-size: 12px;
+      line-height: 1.7;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .content {
+      width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .content h1 {
+      color: #0088bb;
+    }
+
+    .content .item {
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px dotted #0088bb;
+      font-size: 0;
+    }
+
+    .content .item h2 {
+      font-size: 16px;
+      font-weight: bold;
+      border-bottom: 2px solid #0088bb;
+      margin-bottom: 10px;
+    }
+
+    .content .item li {
+      display: inline-block;
+      margin: 10px;
+    }
+
+    .content .item li a {
+      display: inline-block;
+      font-size: 1rem;
+      width: 230px;
+      height: 230px;
+    }
+
+    .item1 li a {
+      background-color: blue;
+    }
+
+    .item2 li a {
+      background-color: green;
+    }
+
+    .item3 li a {
+      background-color: yellow;
+    }
+
+    .item4 li a {
+      background-color: red;
+    }
+
+    .item5 li a {
+      background-color: black;
+    }
+
+    .item6 li a {
+      background-color: white;
+    }
+
+    .menu {
+      position: fixed;
+      top: 100px;
+      left: 50%;
+      margin-left: 400px;
+      width: 80px;
+    }
+
+    .menu ul li a {
+      display: block;
+      margin: 5px 0;
+      font-size: 14px;
+      font-weight: bold;
+      color: #333;
+      width: 80px;
+      height: 50px;
+      line-height: 50px;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .menu ul li a:hover,
+    .menu ul li a.active {
+      color: #fff;
+      background: #0088bb;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu">
+    <ul>
+      <li><a href="#item1" class="active">1F 蓝色</a></li>
+      <li><a href="#item2">2F 绿色</a></li>
+      <li><a href="#item3">3F 黄色</a></li>
+      <li><a href="#item4">4F 红色</a></li>
+      <li><a href="#item5">5F 黑色</a></li>
+      <li><a href="#item6">6F 白色</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h1>色彩天堂</h1>
+    <div id="item1" class="item item1">
+      <h2>颜色</h2>
       <ul>
-        <li><a href="#item1" class="active">1F 蓝色</a></li>
-        <li><a href="#item2">2F 绿色</a></li>
-        <li><a href="#item3">3F 黄色</a></li>
-        <li><a href="#item4">4F 红色</a></li>
-        <li><a href="#item5">5F 黑色</a></li>
-        <li><a href="#item6">6F 白色</a></li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
       </ul>
     </div>
-    <div class="content">
-      <h1>色彩天堂</h1>
-      <div id="item1" class="item item1">
-        <h2>颜色</h2>
-        <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
-      </div>
-      <div id="item2" class="item item2">
-        <h2>颜色</h2>
-        <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
-      </div>
-      <div id="item3" class="item item3">
-        <h2>颜色</h2>
-        <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
-      </div>
-      <div id="item4" class="item item4">
-        <h2>颜色</h2>
-        <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
-      </div>
-      <div id="item5" class="item item5">
-        <h2>颜色</h2>
-        <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
-      </div>
-      <div id="item6" class="item item6">
-        <h2>颜色</h2>
-        <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
-      </div>
+    <div id="item2" class="item item2">
+      <h2>颜色</h2>
+      <ul>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+      </ul>
     </div>
-    <script src="js/jquery.min.js" charset="utf-8"></script>
-    <script type="text/javascript">
+    <div id="item3" class="item item3">
+      <h2>颜色</h2>
+      <ul>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+      </ul>
+    </div>
+    <div id="item4" class="item item4">
+      <h2>颜色</h2>
+      <ul>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+      </ul>
+    </div>
+    <div id="item5" class="item item5">
+      <h2>颜色</h2>
+      <ul>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+      </ul>
+    </div>
+    <div id="item6" class="item item6">
+      <h2>颜色</h2>
+      <ul>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="js/jquery.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //监听
+      $(window).scroll(function(event) {
+        var top = $(document).scrollTop();
+        var $menu = $(".menu");
+        var $items = $(".content .item");
+        var activeId = "#item1";
+        $items.each(function(index, el) {
+          var itemTop = $(this).offset().top;
+          if (top > itemTop - 200) {
+            activeId = "#" + $(this).attr('id');
+          } else {
+            return false;
+          }
+        });
+        var activeLink = $menu.find('.active');
+        if (activeId != activeLink.attr('href')) {
+          activeLink.removeClass('active');
+          $("[href='" + activeId + "']").addClass('active');
+        }
+      });
+    });
+  </script>
+</body>
 
-    </script>
-  </body>
 </html>
