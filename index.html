@@ -106,6 +106,15 @@
       color: #fff;
       background: #0088bb;
     }
+    /*ie6 hack*/
+    * html, * html body{
+      background-image: url(about:blank);
+      background-attachment: fixed;
+    }
+    * html #menu {
+      position: absolute;
+      top: expression(((e=document.documentElement.scrollTop)?e:document.body.scrollTop)+100+'px');
+    }
   </style>
 </head>
 
